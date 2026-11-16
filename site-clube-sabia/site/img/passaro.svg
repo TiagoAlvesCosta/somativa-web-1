@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Ilustração de um sabiá pousado em um galho">
+  <rect width="480" height="360" rx="8" fill="#e3eef0"/>
+  <circle cx="378" cy="82" r="38" fill="#f2b705" opacity=".85"/>
+  <path d="M0 300c60-30 120-30 190-8s140 24 290-10v78H0z" fill="#b9d3d6"/>
+  <path d="M0 330c90-24 170-20 250-4s160 8 230-10v44H0z" fill="#12373a"/>
+  <path d="M40 232c80-14 150-6 240 10 50 9 110 4 160-18" fill="none" stroke="#6b4f3a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M120 238c-12-18-30-24-48-20M300 244c14-20 34-26 52-22" fill="none" stroke="#6b4f3a" stroke-width="6" stroke-linecap="round"/>
+  <g>
+    <path d="M160 222c-6-46 22-92 74-98 28-3 50 8 62 26l44-12-34 34c-4 38-30 66-70 70-40 4-72-6-76-20z" fill="#8a5a3c"/>
+    <path d="M196 214c30 12 66 6 92-22 4 22-12 46-44 50-26 2-46-8-48-28z" fill="#f2b705"/>
+    <path d="M178 196c-26-4-48 4-66 20 22 6 48 4 70-4z" fill="#6b4f3a"/>
+    <circle cx="278" cy="152" r="5" fill="#12373a"/>
+    <path d="M296 150l40 10-40 8z" fill="#f2b705" stroke="#c08f00" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M214 244v-14M232 246v-14" stroke="#6b4f3a" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

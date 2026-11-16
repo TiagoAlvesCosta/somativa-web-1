@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscrição · Clube Sabiá</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main class="principal">
+    <div class="container">
+      <h1>Inscrição no clube</h1>
+      <p class="texto-suave">Todos os campos são obrigatórios. Ao enviar, você verá os dados recebidos na página seguinte.</p>
+
+      <form class="formulario" id="form-inscricao" action="formAction.html" method="get" novalidate>
+        <p class="alerta" id="resumo-erros" role="alert" hidden></p>
+
+        <div class="campo" data-campo="nome">
+          <label class="campo__rotulo" for="nome">Nome completo</label>
+          <input class="campo__entrada" type="text" id="nome" name="nome" autocomplete="name" aria-describedby="erro-nome">
+          <p class="campo__erro" id="erro-nome" aria-live="polite"></p>
+        </div>
+
+        <div class="campo" data-campo="email">
+          <label class="campo__rotulo" for="email">E-mail</label>
+          <input class="campo__entrada" type="email" id="email" name="email" autocomplete="email" aria-describedby="erro-email">
+          <p class="campo__erro" id="erro-email" aria-live="polite"></p>
+        </div>
+
+        <div class="campo" data-campo="nascimento">
+          <label class="campo__rotulo" for="nascimento">Data de nascimento</label>
+          <input class="campo__entrada" type="date" id="nascimento" name="nascimento" aria-describedby="erro-nascimento">
+          <p class="campo__erro" id="erro-nascimento" aria-live="polite"></p>
+        </div>
+
+        <div class="campo" data-campo="telefone">
+          <label class="campo__rotulo" for="telefone">Telefone com DDD</label>
+          <input class="campo__entrada" type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" autocomplete="tel" aria-describedby="erro-telefone">
+          <p class="campo__erro" id="erro-telefone" aria-live="polite"></p>
+        </div>
+
+        <div class="campo" data-campo="estado">
+          <label class="campo__rotulo" for="estado">Estado</label>
+          <select class="campo__entrada" id="estado" name="estado" aria-describedby="erro-estado">
+            <option value="">Selecione…</option>
+            <option>Paraná</option>
+            <option>Santa Catarina</option>
+            <option>Rio Grande do Sul</option>
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Minas Gerais</option>
+            <option>Outro</option>
+          </select>
+          <p class="campo__erro" id="erro-estado" aria-live="polite"></p>
+        </div>
+
+        <fieldset class="campo" data-campo="nivel">
+          <legend>Nível de experiência</legend>
+          <label class="opcao"><input type="radio" name="nivel" value="iniciante"> Iniciante</label>
+          <label class="opcao"><input type="radio" name="nivel" value="intermediario"> Intermediário</label>
+          <label class="opcao"><input type="radio" name="nivel" value="avancado"> Avançado</label>
+          <p class="campo__erro" aria-live="polite"></p>
+        </fieldset>
+
+        <fieldset class="campo" data-campo="interesses">
+          <legend>Interesses (escolha um ou mais)</legend>
+          <label class="opcao"><input type="checkbox" name="interesses" value="canto"> Cantos e sons</label>
+          <label class="opcao"><input type="checkbox" name="interesses" value="fotografia"> Fotografia</label>
+          <label class="opcao"><input type="checkbox" name="interesses" value="trilhas"> Trilhas</label>
+          <label class="opcao"><input type="checkbox" name="interesses" value="ciencia"> Ciência cidadã</label>
+          <p class="campo__erro" aria-live="polite"></p>
+        </fieldset>
+
+        <div class="campo" data-campo="mensagem">
+          <label class="campo__rotulo" for="mensagem">Por que você quer participar?</label>
+          <textarea class="campo__entrada" id="mensagem" name="mensagem" aria-describedby="contador-mensagem erro-mensagem"></textarea>
+          <p class="contador" id="contador-mensagem"></p>
+          <p class="campo__erro" id="erro-mensagem" aria-live="polite"></p>
+        </div>
+
+        <div class="campo" data-campo="termos">
+          <label class="opcao"><input type="checkbox" id="termos" name="termos" value="aceito"> Li e aceito as regras do clube</label>
+          <p class="campo__erro" aria-live="polite"></p>
+        </div>
+
+        <div class="botoes">
+          <button class="btn btn--sol" type="submit">Enviar inscrição</button>
+          <button class="btn btn--contorno" type="reset">Limpar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="rodape">
+    <div class="container"><p>© <span id="ano-atual">2026</span> Clube Sabiá · Observação de aves para todas as idades.</p></div>
+  </footer>
+  <script src="js/menu.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

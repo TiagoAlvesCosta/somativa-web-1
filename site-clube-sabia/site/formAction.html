@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dados recebidos · Clube Sabiá</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main class="principal">
+    <div class="container">
+      <section id="area-dados" hidden>
+        <h1 id="titulo-confirmacao">Inscrição recebida!</h1>
+        <p class="texto-suave">Estes são os dados que chegaram pelo endereço da página (método GET).</p>
+        <div class="tabela-wrap">
+          <table class="tabela">
+            <caption class="texto-suave" style="text-align:left;padding-bottom:.5rem">Dados enviados no formulário</caption>
+            <tbody id="corpo-tabela"></tbody>
+          </table>
+        </div>
+        <p style="margin-top:1.5rem"><a class="btn btn--contorno" href="form.html">Fazer outra inscrição</a></p>
+      </section>
+
+      <section id="sem-dados">
+        <h1>Nenhum dado recebido</h1>
+        <p>Esta página mostra as informações enviadas pelo formulário de inscrição. Preencha o formulário para vê-las aqui.</p>
+        <a class="btn btn--sol" href="form.html">Ir para a inscrição</a>
+      </section>
+    </div>
+  </main>
+  <footer class="rodape">
+    <div class="container"><p>© <span id="ano-atual">2026</span> Clube Sabiá · Observação de aves para todas as idades.</p></div>
+  </footer>
+  <script src="js/menu.js"></script>
+  <script src="js/formAction.js"></script>
+</body>
+</html>
